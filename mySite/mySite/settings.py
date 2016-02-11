@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.sites',
     'myapp',
+    'markdown_deux',
    # 'south',
 ]
 
@@ -58,7 +59,7 @@ ROOT_URLCONF = 'mySite.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['/home/yusheng/workspace/mySiteProject/mySite/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -73,6 +74,10 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'mySite.wsgi.application'
 
+##Templates
+TEMPLATE_DIRS = (
+'/home/yusheng/workspace/mySiteProject/mySite/templates',
+)
 
 # Database
 # https://docs.djangoproject.com/en/1.9/ref/settings/#databases
@@ -124,3 +129,5 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
