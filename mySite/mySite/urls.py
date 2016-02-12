@@ -21,4 +21,5 @@ admin.autodiscover()
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', 'myapp.views.index'),
+    url(r'^hello/', 'myapp.views.hello'),
 ]

@@ -7,3 +7,6 @@ from django.template import RequestContext
 def index(request):
     #return render_to_response('index.html')
 	return render(request, 'index.html')
+
+def hello(request):
+	return render(request, 'index.html')
